@@ -3,28 +3,22 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using FastFood.Models;
 
-namespace FastFoody.Controllers
+namespace FastFood.Controllers
 {
     public class HomeController : Controller
     {
-        public ActionResult Index()
+        // GET: Home
+        QuanLyThucAnEntities db = new QuanLyThucAnEntities();
+        public ActionResult Index(int? page)
         {
-            return View();
+            //Tạo biến số sản phẩm trên trang
+        
+            //Tạo biến số trang
+            int pageNumber = (page ?? 1);
+            return View(db.ThucAns.Where(n => n.Moi == 1).OrderBy(n => n.GiaBan).ToList());
         }
-
-        public ActionResult About()
-        {
-            ViewBag.Message = "Your application description page.";
-
-            return View();
-        }
-
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
-        }
+    
     }
 }
