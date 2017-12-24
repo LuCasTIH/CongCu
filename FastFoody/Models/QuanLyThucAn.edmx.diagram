@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="116e3a17123e4cd8b9ce096cf6ef38f6" Name="Diagram1">
+        <EntityTypeShape EntityType="QuanLyThucAnModel.Admin" Width="1.5" PointX="5.75" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyThucAnModel.ChiTietDonHang" Width="1.5" PointX="5.25" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyThucAnModel.DauBep" Width="1.5" PointX="3" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyThucAnModel.DonHang" Width="1.5" PointX="3" PointY="11.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyThucAnModel.KhachHang" Width="1.5" PointX="0.75" PointY="11.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyThucAnModel.LoaiMon" Width="1.5" PointX="0.75" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyThucAnModel.NhaSanXuat" Width="1.5" PointX="0.75" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyThucAnModel.sysdiagrams" Width="1.5" PointX="7.75" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyThucAnModel.ThamGia" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyThucAnModel.ThucAn" Width="1.5" PointX="3" PointY="3" IsExpanded="true" />
+        <AssociationConnector Association="QuanLyThucAnModel.FK_ChiTietDonHang_DonHang" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyThucAnModel.FK_ChiTietDonHang_ThucAn" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyThucAnModel.FK_ThamGia_DauBep" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyThucAnModel.FK_DonHang_KhachHang" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyThucAnModel.FK_ThucAn_LoaiMon" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyThucAnModel.FK_ThucAn_NhaSanXuat" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyThucAnModel.FK_ThamGia_ThucAn" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
